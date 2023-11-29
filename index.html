@@ -2,9 +2,15 @@
 <html>
   <head>
     <title>HIGHSCORE</title>
+    <style>
+      body {
+        background-color: #111111;
+      }
+    </style>
   </head>
   <body>
     <script>
+      alert()
       fetch('https://gist.githubusercontent.com/Dalifried/d8c97e65220dd77841ec9601c6ca239c/raw/ddb01c4d8b0f8736b7c45057c6cb1b812d7a6ff0/highscore.json')
         .then(response => response.json())
         .then(data => {
